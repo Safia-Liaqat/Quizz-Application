@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".StartQuizz">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/Intro"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="40dp" />
+    <TextView
+        android:id="@+id/tv_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/high_score"
+        android:layout_above="@+id/btn_start_quizz"
+        android:textSize="25sp"
+        android:textColor="@color/text_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/start_quizz"
+        android:textColor="@color/text_color"
+        android:backgroundTint="@color/btn"
+        android:id="@+id/btn_start_quizz"/>
+</RelativeLayout>
